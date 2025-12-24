@@ -16,6 +16,7 @@
             --bg-dark: #0f172a;
             --card-bg: rgba(255, 255, 255, 0.05);
             --text-light: #f8fafc;
+            --telegram-color: #24A1DE;
         }
 
         * { 
@@ -32,15 +33,6 @@
             padding: 40px 10px;
         }
 
-        /* Background Animation */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(45deg, #00d2ff10, #3a7bd510);
-            z-index: -1;
-        }
-
         .header { 
             margin-bottom: 50px; 
             text-align: center;
@@ -52,17 +44,14 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
-            letter-spacing: 1px;
             margin-bottom: 10px;
         }
 
         .header p {
             color: #94a3b8;
             font-size: 1.1rem;
-            font-weight: 300;
         }
 
-        /* App Grid Layout */
         .app-container {
             max-width: 1100px;
             margin: 0 auto;
@@ -72,7 +61,6 @@
             padding: 20px;
         }
 
-        /* Modern Card Design */
         .app-card { 
             background: var(--card-bg);
             backdrop-filter: blur(10px);
@@ -87,8 +75,6 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
 
         .app-card:hover { 
@@ -98,65 +84,58 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
         }
 
-        .app-card::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0,210,255,0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: 0.5s;
-        }
-
-        .app-card:hover::after {
-            opacity: 1;
-        }
-
         .app-icon { 
             font-size: 50px; 
             margin-bottom: 15px; 
-            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
         }
 
         .app-name { 
             font-weight: 600; 
             font-size: 0.95rem; 
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
         }
 
-        /* Download Badge */
         .badge {
             margin-top: 10px;
             font-size: 0.7rem;
             background: var(--primary-color);
             padding: 3px 12px;
             border-radius: 20px;
-            text-transform: uppercase;
             font-weight: bold;
             color: #0f172a;
         }
 
+        /* Footer & Telegram Link Style */
         .footer { 
             margin-top: 80px; 
             color: #64748b; 
-            font-size: 0.9rem; 
-            letter-spacing: 1px;
             text-align: center;
+            padding-bottom: 40px;
         }
 
-        /* Responsive adjustments */
+        .tg-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(36, 161, 222, 0.15);
+            color: var(--telegram-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 1px solid var(--telegram-color);
+            transition: 0.3s;
+        }
+
+        .tg-link:hover {
+            background: var(--telegram-color);
+            color: white;
+            box-shadow: 0 0 20px rgba(36, 161, 222, 0.4);
+        }
+
         @media (max-width: 600px) {
             .app-container {
                 grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                gap: 15px;
             }
-            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -164,15 +143,14 @@
 
     <div class="header">
         <h1>PREMIUM ANDROID APPS</h1>
-        <p>Your ultimate destination for premium MOD apps.</p>
+        <p>Download All Premium Apps For Free</p>
     </div>
 
     <div class="app-container">
-        
         <a href="./Duolingo - Learn Languages/" class="app-card">
             <span class="app-icon">🦉</span>
             <span class="app-name">Duolingo Premium</span>
-            <span class="badge">Pro Unlocked</span>
+            <span class="badge">Unlocked</span>
         </a>
 
         <a href="./YouTube ReVanced [ Advanced ]/" class="app-card">
@@ -198,35 +176,20 @@
             <span class="app-name">PicsArt AI Gold</span>
             <span class="badge">Gold</span>
         </a>
-
+        
         <a href="./YouTube ReVanced [ Advanced ]/" class="app-card">
-            <span class="app-icon">🎬</span>
-            <span class="app-name">CapCut Pro</span>
-            <span class="badge">VIP</span>
-        </a>
-
-        <a href="./YouTube ReVanced [ Advanced ]/" class="app-card">
-            <span class="app-icon">🎵</span>
-            <span class="app-name">Spotify Mod</span>
-            <span class="badge">Premium</span>
-        </a>
-
-        <a href="./YouTube ReVanced [ Advanced ]/" class="app-card">
-            <span class="app-icon">🎮</span>
-            <span class="app-name">Minecraft Full</span>
-            <span class="badge">Paid</span>
-        </a>
-
-        <a href="./YouTube ReVanced [ Advanced ]/" class="app-card">
-            <span class="app-icon">📸</span>
-            <span class="app-name">Lightroom Mobile</span>
-            <span class="badge">Unlocked</span>
+            <span class="app-icon">📁</span>
+            <span class="app-name">More Apps</span>
+            <span class="badge">Free</span>
         </a>
 
     </div>
 
     <div class="footer">
-        &copy; 2025 Premium Android Apps | Developed with ❤️
+        <p>&copy; 2025 Premium Android Apps</p>
+        <a href="https://t.me/androidmodapkfile" target="_blank" class="tg-link">
+            Join Our Telegram Channel
+        </a>
     </div>
 
 </body>
