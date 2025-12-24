@@ -3,38 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Download Link</title>
+    <title>Premium App Downloader</title>
 
     <script src="https://alwingulla.com/88/p.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* আগের সব স্টাইল একই থাকবে */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background: #f0f2f5; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
-        .card { background: #fff; width: 100%; max-width: 400px; padding: 40px 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
-        .icon { font-size: 50px; margin-bottom: 15px; }
-        h2 { font-size: 22px; color: #333; margin-bottom: 10px; }
-        .status { color: #28a745; font-weight: bold; font-size: 14px; margin-bottom: 20px; display: block; }
-        .download-btn { display: block; background: #FF5722; color: #fff; text-decoration: none; padding: 18px; border-radius: 8px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 0 #E64A19; transition: 0.2s; }
-        .download-btn:active { transform: translateY(3px); box-shadow: none; }
-        .footer-text { margin-top: 25px; font-size: 12px; color: #888; }
+        body { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; color: #fff; }
+        .card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); width: 100%; max-width: 420px; padding: 50px 30px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); text-align: center; }
+        .icon-box { background: rgba(255, 255, 255, 0.2); width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 20px; font-size: 40px; }
+        h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .status { display: inline-block; background: rgba(40, 167, 69, 0.2); color: #4ade80; font-weight: 600; font-size: 13px; padding: 5px 15px; border-radius: 20px; margin-bottom: 25px; }
+        p { color: #e0e0e0; font-size: 15px; margin-bottom: 35px; }
+        .download-btn { display: block; background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%); color: #fff; text-decoration: none; padding: 18px; border-radius: 12px; font-weight: 700; font-size: 18px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(221, 36, 118, 0.4); border: none; width: 100%; }
+        .download-btn:hover { transform: scale(1.03); }
+        .footer-text { margin-top: 30px; font-size: 12px; color: rgba(255, 255, 255, 0.5); }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="icon">📥</div>
-        <h2>Duolingo - Learn Languages</h2>
-        <span class="status">● Secure & Fast Server</span>
+        <div class="icon-box">📥</div>
+        <h2>Duolingo Premium</h2>
+        <span class="status">● Server Online</span>
         
-        <p style="color: #555; margin-bottom: 30px;">Click the button below to start your download.</p>
+        <p>Click below to start your premium download. Ad will open in a new tab.</p>
 
-        <a href="APNAR_DIRECT_LINK_OR_APP_LINK" class="download-btn">DOWNLOAD NOW</a>
+        <button onclick="handleDownload()" class="download-btn">🚀 DOWNLOAD NOW</button>
 
         <div class="footer-text">
-            By downloading, you agree to our Terms of Service.
+            Securely encrypted by Premium Server.
         </div>
     </div>
 
-    </body>
+    <script>
+        function handleDownload() {
+            // ১. Monetag বিজ্ঞাপনের লিঙ্ক (যা নতুন ট্যাবে খুলবে)
+            var monetagAdLink = "https://otieu.com/4/9382477";
+            
+            // ২. আপনার আসল ডাউনলোড পেজ বা ফাইলের লিঙ্ক (যেখানে এই পেজটি রিডাইরেক্ট হবে)
+            var originalDownloadPage = "https://1024terabox.com/s/1j4gVfBq8DlYA3yjTw54t_g";
 
+            // প্রথমে নতুন ট্যাবে বিজ্ঞাপনটি ওপেন হবে
+            window.open(monetagAdLink, '_blank');
+
+            // এরপর বর্তমান পেজটি অরিজিনাল লিঙ্কে রিডাইরেক্ট হবে
+            window.location.href = originalDownloadPage;
+        }
+    </script>
+
+</body>
 </html>
