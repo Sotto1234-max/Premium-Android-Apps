@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium App Downloader</title>
+
+    <script src="https://alwingulla.com/88/p.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { 
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            padding: 20px;
+            color: #fff;
+        }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            width: 100%; 
+            max-width: 420px; 
+            padding: 50px 30px; 
+            border-radius: 24px; 
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon-box {
+            background: rgba(255, 255, 255, 0.2);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            font-size: 40px;
+        }
+
+        h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+        
+        .status { 
+            display: inline-block;
+            background: rgba(40, 167, 69, 0.2);
+            color: #4ade80; 
+            font-weight: 600; 
+            font-size: 13px; 
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-bottom: 25px; 
+            text-transform: uppercase;
+        }
+
+        p { color: #e0e0e0; font-size: 15px; margin-bottom: 35px; line-height: 1.6; }
+
+        .download-btn { 
+            display: block; 
+            background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%); 
+            color: #fff; 
+            text-decoration: none; 
+            padding: 18px; 
+            border-radius: 12px; 
+            font-weight: 700; 
+            font-size: 18px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(221, 36, 118, 0.4);
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .download-btn:hover { 
+            transform: scale(1.03);
+            box-shadow: 0 6px 20px rgba(221, 36, 118, 0.6);
+        }
+
+        .footer-text { 
+            margin-top: 30px; 
+            font-size: 12px; 
+            color: rgba(255, 255, 255, 0.5); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon-box">📥</div>
+        <h2>VPN - SUPER UNLIMITED PROXY V2.20.0 (PREMIUM) </h2>
+        <span class="status">● Server Online</span>
+        
+        <p>Your file is ready to download. Click the button below;  your download link  will open in a new tab and the ad will show here.</p>
+
+        <button onclick="startAction()" class="download-btn">🚀 Get Download Link</button>
+
+        <div class="footer-text">
+            Securely encrypted by Premium Server. <br>
+            © 2025 All Rights Reserved.
+        </div>
+    </div>
+
+    <script>
+        function startAction() {
+            // ১. এখানে আপনার Monetag অ্যাড লিঙ্কটি দিন (যা নতুন ট্যাবে খুলবে)
+            var adLink = "https://1024terabox.com/s/1cEoCbH089sgk0Q1N66pdPw";
+            
+            // ২. এখানে আপনার আসল ডাউনলোড পেজ বা সরাসরি ফাইলের লিঙ্ক দিন
+            var mainDownloadLink = "https://www.profitableratecpm.com/k8hkwgsm3z?key=2cb2941afdb3af8f1ca4ced95e61e00f"; 
+
+            // নতুন ট্যাবে বিজ্ঞাপন ওপেন করা
+            window.open(adLink, '_blank');
+
+            // বর্তমান পেজটি অরিজিনাল ডাউনলোড লিঙ্কে রিডাইরেক্ট করা
+            window.location.href = mainDownloadLink;
+        }
+    </script>
+
+</body>
+</html>
